@@ -15,15 +15,6 @@
             <?php unset($_SESSION['edit_food_favorites']); ?>
             </div>
         <?php } ?>
-    <?php if($this->session->flashdata('delete_food_favorites') != '') { ?>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-            The Food successfully deleted!
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-            <?php unset($_SESSION['delete_food_favorites']); ?>
-            </div>
-        <?php } ?>
         <?php if($this->session->flashdata('edit_drink_favorites') != '') { ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
             New Drink Successfully added!
@@ -35,11 +26,20 @@
         <?php } ?>
     <?php if($this->session->flashdata('delete_food_favorites') != '') { ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-            The Drink successfully deleted!
+            The Food successfully deleted!
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             <?php unset($_SESSION['delete_food_favorites']); ?>
+            </div>
+        <?php } ?>
+    <?php if($this->session->flashdata('delete_drink_favorites') != '') { ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+            The Drink successfully deleted!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <?php unset($_SESSION['delete_drink_favorites']); ?>
             </div>
         <?php } ?>
     </div>

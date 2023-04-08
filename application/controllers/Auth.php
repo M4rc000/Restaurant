@@ -116,6 +116,12 @@ class Auth extends CI_Controller
             ];
 
             $this->db->insert('user', $data);
+            $this->session->set_flashdata('registration','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Your email has been registered
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
           redirect('auth');
         }
     }
