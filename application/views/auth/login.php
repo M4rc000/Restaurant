@@ -6,7 +6,7 @@
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="row">
-                        <div class="col-lg-4 bg-login-image"></div>
+                        <div class="col-lg-4 bg-registration-image"></div>
                         <div class="col-lg-8">
                             <div class="p-5">
                                 <div class="text-center">
